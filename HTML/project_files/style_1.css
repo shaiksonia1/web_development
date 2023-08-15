@@ -1,0 +1,46 @@
+h2{
+    color: antiquewhite;
+}
+.boxmodel{
+    border: 5px solid pink;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0px 20px;
+    width: 33px;
+    height: 70px;
+
+}
+
+.into,p{
+
+    font-size: 30px;
+}
+
+span{
+    font-size: 2em; 
+    /* rem is root element whatever the document is its always going to be twice big */
+    /* em will multiply the value by 2 times of the size given in the font size eg: 30px *2 = 60px it can be used for particular word to show biiger */
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 400px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #888888;
+}
+img{
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    transition: all 1s;
+}
+img:hover{
+    transform:scale(1.1);
+}

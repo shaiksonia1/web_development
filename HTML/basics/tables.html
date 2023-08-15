@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+       table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        color: #000;
+       }
+       td,th {
+        border: 1px solid black;
+        padding: 10px;
+       }
+       tr:nth-child(even){
+        background-color: rgb(125, 133, 114);
+       }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <colgroup>
+            <col span="2" style="background-color: rgb(77, 28, 28);"/>
+        </colgroup>
+        <tr>
+            <th>heading1</th>
+            <th>heading2</th>
+            <th>heading3</th>
+        </tr>
+        <tr>
+            <td>sonia</td>
+            <td>sonia</td>
+            <td>sonia</td>
+        </tr>
+        <tr>
+            <td>sonia</td>
+            <td>sonia</td>
+            <td>sonia</td>
+        </tr>
+        <tr>
+            <td>sonia</td>
+            <td>sonia</td>
+            <td>sonia</td>
+        </tr>
+    </table>
+ <br>
+    <table style="width: 100%;">
+        <tr>
+            <th colspan="5">heading1</th>
+            <th>heading2</th>
+            <th>heading3</th>
+        </tr>
+        <tr>
+            <td>sonia</td>
+            <td>sonia</td>
+            <td>sonia</td>
+        </tr>
+     
+    </table>
+ 
+</body>
+</html>

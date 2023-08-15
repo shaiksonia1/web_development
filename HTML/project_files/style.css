@@ -1,0 +1,32 @@
+
+body{
+    background-color: palevioletred;
+    
+}
+h2,p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    border: dashed;
+
+}
+
+p{
+    text-align: center;
+    text-transform: uppercase;
+    /* text-decoration: line-through; */
+    line-height: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+#div1{
+    background-color: rgb(133, 157, 176);
+}
+#div2{
+    background-color: rgb(126, 126, 32);
+}

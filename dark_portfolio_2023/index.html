@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/502c9cb802.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, I am</p>
+                <h1><span> Shaik Sonia</span><br>I am a UI/UX Designer <br>and Software Developer</h1>
+            </div>
+        </div>
+
+    </div>
+<!------------------AboutMe------------------------->
+
+    <div id="about">
+        <div class="container">
+<div class="row">
+    <div class="about-col-1">
+        <img src="images/user.png">
+    </div>
+    <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1><br>
+    <p>Welcome to my portfolio! I am a UI/UX and software developer with a passion for creating user-centered designs and intuitive software. I have experience in various design and development tools,Figma. I am also proficient in web technologies such as HTML, CSS, and JavaScript. My goal is to design and develop innovative solutions that provide a seamless user experience and improve efficiency for businesses. Browse through my portfolio to see some of my past projects and design work.</p>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+        <p class="tab-links"onclick="opentab('education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span><b>Frontend Development</b></span><br>HTML<br>CSS<br>REACT JS<br>CANVAS<br>FIGMA</li><br>
+            <li><span><b>Programming Languges</b></span><br>C++<br>JAVA</li><br>
+            <li><span><b>Backend Development</b></span><br>Firebase<br>C++ <br>MYSQL<br>GitHub<br>Android studio</b></li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="experience">
+        <ul>
+            <li><span><b>Experienced</b></span><br>HTML<br>CSS<br>FIGMA<br>Canvas<br>C++</li><br>
+            <li><span><b>Intermediate</b></span><br>Android Studio<br>Firebase<br>GitHub<br>MYSQL</li><br>
+            <li><span><b>Introduction</b></span><br>REACT JS<br></li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span><b>Lovely Professional University</b></span><br>B.Tech <br>Computer Science Engineering</li>
+            <br>
+            <li><span><b>Lovely Professional University</b></span><br> Diploma<br> Computer Science Engineering</li><br>
+            <li><span><b>Narayana Concept school</b></span><br>10th</li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <!---------------Services--------------->
+    <div id="services">
+        <div class="container"></div>
+        <h1 class="sub-title">My Services</h1>
+        <br>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2><b>Web Development</b></h2>
+                <p>In web development, my portfolio showcases my understanding of web development technologies and my ability to create functional and visually appealing websites. I have experience working with languages such as HTML, CSS, and JavaScript. I have also worked on projects that involve responsive design and cross-browser compatibility. My goal is to continue learning and expanding my skills in web development to create dynamic and user-friendly websites.</p>
+ <!-------<a href="#">Learn more</a>------>             </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2><b>UI/UX Design</b></h2>
+                <p>In UI/UX design, my portfolio showcases my understanding of user-centered design principles and my ability to create intuitive and visually appealing interfaces. I have experience conducting user research, creating wireframes and mockups, and using design software such as Figma and Sketch. My goal is to continue honing my design skills and work with a team to create digital experiences that are both functional and enjoyable for users.</p>
+               <!-------<a href="#">Learn more</a>------> 
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2><b>Software Development</b></h2>
+                <p>In software development, my portfolio showcases my understanding of software development methodologies and my ability to create functional and efficient programs. I have experience working with various programming languages such as Java, C++, and I am familiar with software development tools such as Android Studio and Visual Studio. I have also worked on projects that involve Object-Oriented Programming (OOP) and Agile development. My goal is to continue learning and expanding my skills in software development to create robust and reliable applications that solve real-world problems.</p>
+ <!-------<a href="#">Learn more</a>------>             </div>
+        </div>
+    </div>
+    <!----------------------------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1><br>
+            <div class="work-list">
+                <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3><b>Rocket Animation</b></h3>
+                    <p>In this mini project, I have created a small animation of a rocket rotating around the moon using HTML and CSS. Using HTML to structure the content of the webpage and CSS to style and animate the rocket.</p>
+                    <a href="https://github.com/shaiksonia1/Rocket_Animation"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3><b>Calculator</b></h3>
+                    <p>
+                        This is a simple calculator built with HTML, CSS, and JavaScript. The calculator has a clean and modern user interface, with buttons for the digits, basic arithmetic operations, and a clear button to reset the display.
+                        
+                        The calculator uses JavaScript to perform the calculations and update the display. It can handle basic operations such as addition, subtraction, multiplication, and division, as well as decimal numbers and negative values.</p>
+                        <a href="https://github.com/shaiksonia1/Calculator"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3><b>MatDaan</b></h3>
+                    <p>Introducing our secure and convenient digital voting app, designed to make the voting process easier and more accessible for all. With our app, users can easily register to vote, view candidates and ballot measures, and cast their vote from the comfort of their own device. Our app utilizes cutting-edge security measures to ensure that every vote is accurate and protected. </p>
+                    <a href="https://github.com/shaiksonia1/MatDaan1"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3><b>Design of e-commerce</b></h3>
+                    <p>The e-commerce website design in Figma features a clean and modern layout with a focus on showcasing products and making the purchasing process easy for users. The homepage includes a featured product section, a category navigation bar, and a search bar for easy browsing. The product pages include high-quality images, product information, and an add to cart button for quick purchasing. The checkout process is streamlined and secure, with options for creating an account or checking out as a guest.Overall, the design prioritizes user experience and conversion optimization for a seamless shopping experience. </p>
+                    <a href="https://www.figma.com/file/5PTcAInKpSwcbeJt3MPrfs/ciao?node-id=0%3A1&t=feZGhgijVZgLpYyr-1">
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+       <!-------- <a href="#" class="btn">See More</a>------>
+    </div>
+    
+<!-------------contact------------------>
+
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>shaiksonia222@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>8523075575</p>
+            <div class="social-icons">
+                <a href="https://github.com/shaiksonia1"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/_shaiksonia_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/shaik-sonia-a3a9a11a7/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name ="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>@Shaik Sonia. All rights Reserved <i class="fa-solid fa-heart"></i></p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxanqlTmj9mtGtozSsASU9GH17qBuH7JUdySuixLijLxfbkRo4gX5WMjA98s0hP7phSEw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

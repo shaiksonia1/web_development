@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.logo{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover{
+    color: #ba17df;
+    transform: scale(1.1);
+    transition: ease-in-out 200ms ;
+
+}
+
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-section img{
+    margin-top: 30px;
+width: 300px;
+height: 300px;
+}
+.para {display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    margin: 10px;
+    font-size: 1.8rem;
+}
+
+.btn-resume{
+    padding: 20px;
+    width: 500px;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .nav-links a{
+        font-size: .8rem;  
+        margin: 10px;  
+    }
+
+    .para{
+        width: 400px;
+        text-align: center;
+    }
+    .btn-resume{
+        width: 300px;
+        height: 45px;
+        
+    }
+}
+@media screen and (max-width:400px) {
+    .para{
+        width: 300px;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        line-height: 1.8;
+    }
+    .nav-links a{
+        font-size: 0.7rem;
+    }
+
+    .btn-resume{
+        margin-top: 30px;
+        align-items: center;
+    }
+}
