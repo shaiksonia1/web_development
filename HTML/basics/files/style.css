@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 20px;
+    justify-items: start;
 }
 /*css grid 
 display grid- it will display in grid */
