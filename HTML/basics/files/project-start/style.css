@@ -33,6 +33,14 @@ li{
 a{
     color: #fff;
 }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 50vh; /*  view-port height it will adjust according to screen and height and makes more responsive */
+
+}
+
 .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
