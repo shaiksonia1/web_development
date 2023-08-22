@@ -29,6 +29,32 @@ var user = {
     age:21,
     stream:"cse",
     learning:"web_dev",
-    subjects:["pyhton","java","c++"]
-
+    subjects:["pyhton","java","c++"],
+// we can even create the function side the object
+    shout:function(){
+        console.log("hello");
+    }
 };
+
+// to access the objects
+user.age
+// to acess the list inside the object
+user.subjects[2] 
+
+
+
+// we can create objects inside the list
+
+var list=[{
+
+    username:"sonia123",
+    passcode:"1234abc"
+},
+{
+
+    username:"sonia1234",
+    passcode:"1234abcd"
+}
+]
+// to access 
+list[0].passcode;
