@@ -20,3 +20,15 @@ var list =[
 console.log(list[0][3]);
 // here we have created an array and, created  another array inside of it
 // to access the the array we will use list[here the array][here the index value of array].
+
+
+
+// Data structure: Objects
+var user = {
+    name:"sonia",
+    age:21,
+    stream:"cse",
+    learning:"web_dev",
+    subjects:["pyhton","java","c++"]
+
+};
