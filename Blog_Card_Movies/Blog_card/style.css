@@ -1,0 +1,388 @@
+
+ /* add two image backgroung with the bg image property using url 
+    declared the position for the image in left and right and we have given the height and width of the image,
+    we have set the background image to only without repition.
+    and the whole background will be black as a backgroung color
+    */
+body{
+    background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);  
+    background-position: left,right;
+    background-repeat: no-repeat;
+    background-size: 700px 500px, 900px 500px;
+    background-color: #000;
+    
+}
+
+/* 
+in H2 we have given the text position to center and the padding from top is 90px for the space,
+text color is set to white, font size 30,
+*/
+h2{
+    text-align: center;
+    padding-top: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Trebuchet MS';
+   
+}
+/* 
+this is a div tag with the class name wrapper
+the position is set for absolute which means the element is positioned relative to its first positioned (not static) ancestor element	
+tranform translate is used positioning the content vertically and horizontally 
+and we are displaying in flex which means it will show us flexible length on flexible items
+*/
+.wrapper{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+.card{
+    height: 700px;
+    width: 500px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+    cursor: pointer;
+    /* CSS transitions allows you to change property values smoothly, over a given duration. */
+    transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+
+}
+.des{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,.7);
+    width: 100%;
+    height: 100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+
+.card:hover .des{
+    left: 0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+.card:hover{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px, 2px, 3px rgba(0,0,0,3,);
+    transform: scale(.97);
+}
+.card:hover img{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+
+}
+.card h1{
+    color: #5C4B99 ;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0px;
+}
+.card p{
+    color: #282A3A;
+    
+}
+
+.card button{
+    width: fit-content;
+    height: 30px;
+    cursor: pointer;
+    border-style: none;
+    background-color: #735F32;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+    transition: all .5s ease-in-out;
+}
+.card button:hover{
+    transform: scale(.95) translate(-5px);
+    transition: all .5s ease-in-out;
+}
+
+/* max-width below the breakpoint of 600px, changes will be done below 600px
+min-width above the breakpoint of 600px, changes will be done above the 600px
+*/
+@media only screen and (max-width: 600px)  {   
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 900px 500px, 900px 500px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top:450%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  }
+@media only screen and (max-width: 458px)  {   
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 200px 300px, 200px 300px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top:510%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  }
+@media only screen and (min-width: 412px)  {   
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 400px 300px, 400px 300px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top:500%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  }
+@media only screen and (min-width: 600px)  {   
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 350px 400px, 600px 400px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top: 450%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  } 
+  @media only screen and (min-width: 768px)  {   
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 500px 400px, 600px 400px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top: 250%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  } 
+  @media only screen and (min-width: 991px){
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 600px 500px, 600px 500px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top: 250%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  }
+  @media only screen and (min-width: 1200px){
+    body{
+        background-image: url(movie_img/bg.jpeg),url(movie_img/collage.jpeg);  
+        background-position: left,right;
+        background-repeat: no-repeat;
+        background-size: 700px 300px, 900px 300px;
+        background-color: #000;
+    }
+    h2{
+        text-align: center;
+        padding-top: 90px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .wrapper{
+        position: absolute;
+        top:170%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .card{
+        height: 390px;
+        width: 290px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px, 4px,7px rgba(0, 0, 0,.5);
+        cursor: pointer;
+        transition: all.5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+  }
+  
